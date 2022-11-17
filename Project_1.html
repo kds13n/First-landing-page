@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lollipos</title>
+    <style>
+      body {
+        font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+        background: radial-gradient(
+          circle at 7.5% 24%,
+          rgb(237, 161, 193) 0%,
+          rgb(250, 178, 172) 25.5%,
+          rgb(190, 228, 210) 62.3%,
+          rgb(215, 248, 247) 93.8%
+        );
+      }
+      section {
+        margin: 120px 0;
+      }
+      h1 {
+        color: blueviolet;
+        text-align: center;
+        font-family: cursive;
+      }
+      h2 {
+        color: grey;
+        font-weight: 800;
+        font-size: 34px;
+        line-height: 48px;
+        margin: 0;
+      }
+
+      h2 {
+        text-align: center;
+        color: #885df1;
+        padding: 0 0 24px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 28px;
+        font-family: cursive;
+        text-align: center;
+      }
+      div {
+        text-align: center;
+        font-size: 18px;
+        line-height: 28px;
+        font-family: PT Mono, monospace;
+      }
+      button {
+        border-radius: 25px;
+        margin: 0 auto;
+        display: block;
+        background-color: #fff;
+        border: 1px solid #885df1;
+        color: #885df1;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease;
+      }
+      button:hover {
+        color: #fff;
+        background: #885df1;
+      }
+      img {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #7c52ef;
+        border-radius: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lollipop Handmade</h1>
+      <h2>Personalized labels</h2>
+      <img
+        src="https://i.pinimg.com/474x/7a/1c/0c/7a1c0c9e6a9f87301df8fa3c1b87d419--personalized-labels-so-fresh.jpg"
+        alt="Lollipop"
+      />
+      <p>
+        Welcome to the <strong>Lollipop Shop</strong>! We make candies with a
+        personalized design for all occasions. We also work with corporate
+        clients. Choose your own style!!!
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Lollipop"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more information on Wikipedia
+      </a>
+      <br />
+      <button class="buy-button">👉 Buy Lollipops</button>
+      <hr />
+      <span>This page was built by <em>Daria Kuzmenko</em></span>
+    </div>
+    <script>
+      function apply() {
+        let firstName = prompt("What is your first name?");
+        let Email = prompt("What is your Email?");
+
+        let buy = prompt("How many lollipops do you want?");
+
+        let heading = document.querySelector("h1");
+        if (buy >= 20) {
+          alert("! Thank you! you have a discount!");
+        } else {
+          {
+            alert(
+              "Thanks! " +
+                firstName +
+                ", but if you want to have a discount, byu more than 20!"
+            );
+          }
+        }
+      }
+
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", apply);
+    </script>
+  </body>
+</html>
